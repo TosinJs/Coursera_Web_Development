@@ -14,15 +14,24 @@ p {
 }
 
 .content {
-	width: 95%;
+	width: 100%;
 	background-color: lightgrey;
 	border: 1.5px solid black;
-	margin-bottom: 5%;
+	margin-bottom: 0px;
 	margin-right: auto;
 	margin-left: auto;
 	height: 200px;
 	position: relative;
 
+}
+
+#container {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
 }
 
 .header1, .header2, .header3 {
@@ -75,9 +84,8 @@ p {
 		width: 50%
 	}
 	.col_md_12{
-		width: 102.8%;
+		width: 100%;
 		position: relative;
-		left: -11px;
 	}
 }
 
