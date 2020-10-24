@@ -1,0 +1,321 @@
+body {
+	box-sizing: border-box;
+	font-family: arial,sans-serif;
+	padding: 2px;
+	overflow-x: hidden;
+}
+
+/* Header */
+header {
+	font-size: 13px;
+}
+
+.nav-link:any-link{
+	color: rgba(0,0,0,0.87)
+}
+.nav-link:hover,.nav-link:focus {
+	color: #5F6368 !important;
+	text-decoration: underline;
+}
+
+#NavbarList {
+	text-align: right;
+}
+
+#icon {
+	box-sizing: border-box;
+	width: 18px;
+	height: 18px;
+}
+
+#GoogleAccount{
+	text-align: center;
+	background-color: #4387fd;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#GoogleAccount > a {
+	color: white;
+	padding: 0px;
+	font-size: 12px;
+}
+
+#GoogleAccount:hover, #GoogleAccount:focus {
+	text-decoration:none;
+	color: none;
+}
+
+#GoogleAccount > a: hover, #GoogleAccount > a: focus {
+	text-decoration: none;
+	color: none	
+}
+
+#GoogleLogo {
+	margin-top: 90px;
+	border: 0px solid black;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+
+#GoogleLogo > img {
+	width: auto;
+	height: 92px;
+}
+
+/* Buttons */
+#Buttons {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.btn-primary {
+	background-color: #f2f2f2;
+	color: #5F6368;
+	border: 1px solid #f2f2f2;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus {
+    background-color: #f2f2f2 !important;
+    color: #5F6368 !important;
+    border: 1px solid #e4e4e4 !important; 
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.24)
+}
+/* End of Buttons*/
+
+/* Footer */
+
+footer {
+	font-size: 14px;
+}
+
+#AboveBottom {
+	background-color: #f2f2f2;
+	width: 100%;
+	position: absolute;
+	bottom: 35px;
+	height: 35px;
+	padding-top: 5px;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	color: #5F6368;
+
+}
+
+footer a:hover{
+	color: #5F6368;
+}
+
+footer a:any-link{
+	color: #5F6368;
+}
+
+footer a:active{
+	color: red;
+}
+
+#BottomContent {
+	background-color: #f2f2f2;
+	border: 0px solid black;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 35px;
+	padding-top: 5px;
+	color: #5F6368;
+}
+
+#BottomLeft{
+	display: inline-block;
+	position: relative;
+}
+
+#BottomRight{
+	display: inline-block;
+	position: absolute;
+	right: 15px;
+
+}
+
+@media (max-width:701px){
+	#AboveBottom {
+		bottom: 70px;
+	}
+
+	#BottomRight {
+		position: absolute;
+		float: left;
+		width: 100%;
+		text-align: center;
+		bottom: 35px;
+		height: 35px;
+		padding: 5px;
+		background-color: #f2f2f2;
+	}
+	#BottomLeft {
+		position: absolute;
+		float: left;
+		width: 100%;
+		text-align: center;
+		font-size: 100%;
+		height: 35px;
+		bottom: 0px;
+	}
+}
+/* Footer */
+
+/* Language Section*/
+#LanguageSection {
+	margin-top: 20px;
+	font-size: small;
+}
+
+
+/* Search Bar */
+
+.search-container {
+  --searchbox-height: 44px;
+  margin: 0 auto 0 auto;
+  min-width: 410px;
+  width: var(--content-width);
+}
+
+
+/* -----searchbar styles----- */
+
+.searchbar {
+  background: transparent;
+  cursor: text;
+  margin: 0 auto;
+  max-width: 584px;
+  border: 1px solid #e4e4e4;
+ 
+  border-radius: 22px;
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 40px;
+  position: relative;
+}
+.searchbar:focus, .searchbar:hover {
+	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+
+/* -----search-input styles----- */
+
+.search-input {
+  margin: 0;
+  height: 100%;
+  width: calc(100% - 80px);
+  border-color: transparent;
+  font-size: 15px;
+  line-height: 44px;
+  margin: auto 0;
+  overflow: hidden;
+  text-align: initial;
+  text-overflow: ellipsis;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.search-input:focus {
+  outline: transparent;
+}
+
+.search-input:focus::placeholder {
+  color: transparent;
+}
+
+/* -----search-icon styles---- */
+
+.search-icon-wrapper {
+  padding: 0 24px;
+  /* margin-right: 48px; */
+}
+
+.search-icon {
+  -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iIzVGNjM2OCI+PHBhdGggZD0iTTE1LjUgMTRoLS43OWwtLjI4LS4yN0E2LjQ3MSA2LjQ3MSAwIDAgMCAxNiA5LjUgNi41IDYuNSAwIDEgMCA5LjUgMTZjMS42MSAwIDMuMDktLjU5IDQuMjMtMS41N2wuMjcuMjh2Ljc5bDUgNC45OUwyMC40OSAxOWwtNC45OS01em0tNiAwQzcuMDEgMTQgNSAxMS45OSA1IDkuNVM3LjAxIDUgOS41IDUgMTQgNy4wMSAxNCA5LjUgMTEuOTkgMTQgOS41IDE0eiIvPjwvc3ZnPg==);
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 20px;
+  background-color: rgb(117, 117, 117);
+  bottom: 0;
+  left: 16px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  width: 24px;
+}
+
+/* -----search-microphone styles----- */
+
+.search-microphone {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGZpbGw9IiM0Mjg1RjQiIGQ9Ik0xMiAxNWMxLjY2IDAgMi45OS0xLjM0IDIuOTktM0wxNSA1YzAtMS42Ni0xLjM0LTMtMy0zUzkgMy4zNCA5IDV2N2MwIDEuNjYgMS4zNCAzIDMgM3oiLz48cGF0aCBmaWxsPSIjMzRBODUzIiBkPSJNMTEgMTguOTJoMlYyMmgtMnoiLz48cGF0aCBmaWxsPSIjRjRCNDAwIiBkPSJNNyAxMkg1YzAgMS45My43OCAzLjY4IDIuMDUgNC45NWwxLjQxLTEuNDFDNy41NiAxNC42MyA3IDEzLjM4IDcgMTJ6Ii8+PHBhdGggZmlsbD0iI0VBNDMzNSIgZD0iTTEyIDE3Yy0xLjM4IDAtMi42My0uNTYtMy41NC0xLjQ3bC0xLjQxIDEuNDFBNi45OSA2Ljk5IDAgMCAwIDEyLjAxIDE5YzMuODcgMCA2Ljk4LTMuMTQgNi45OC03aC0yYzAgMi43Ni0yLjIzIDUtNC45OSA1eiIvPjwvc3ZnPg==) no-repeat center;
+  background-size: 21px 21px;
+  bottom: 0;
+  cursor: pointer;
+  margin-inline-end: 16px;
+  padding: 22px 12px 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 21px;
+  border-color: transparent;
+}
+
+.search-microphone:focus, .search-microphone:all-links, .search-microphone:active, .search-microphone:visited {
+	border: 4px solid red !important;
+}
+
+.dropdown-menu{
+	border: 1px solid black;
+	position: relative;
+	left: -100px;
+	width: 100%;
+	padding-left: 10px;
+}
+
+.dropdown-item{
+	clear: none;
+	margin: 1px;
+	width: 45%;
+	font-size: 50%;
+	float: left;
+	background: url("**/images/GoogleLogo.png") center no-repeat;
+	background-size: 20px
+}
+/**
+#special{
+	width: 80px;
+	height: 80px;
+	margin-bottom: 20px;
+	margin-left: 35px;
+	margin-right: auto;
+	text-align: center;
+	border-radius: 50%;
+	font-weight: bolder;
+	background-color: teal;
+}**/
+
+#special > a {
+	color: white;
+	font-weight: bolder;
+	padding: 30px;
+	font-size: 20px;
+}
+
+#SpecialButtonHolder {
+	width: 3px;
+	height: 10px;
+	background-color: white;
+	position: absolute;
+	left: -8px;
+}
+
+
+
